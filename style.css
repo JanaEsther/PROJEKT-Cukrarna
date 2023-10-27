@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -28,14 +33,45 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
-	margin: 0;
+  margin: 0;
 }
 
+.hlavicka {
+  display: flex;
+  flex-direction: row;
+  background-image: url(images/cupcake.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:270px 0;
+  position: relative;
+}
 
+.poteseni{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
 
+h1 {
+  font-size: 52px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  
+}
 
-h1{
-	font-size: 52px;
+.menu a {
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 170px;
 }
