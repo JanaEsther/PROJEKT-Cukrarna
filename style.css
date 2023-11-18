@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -34,44 +35,178 @@ html {
 */
 
 body {
-  margin: 0;
+  margin: 0 auto;
+
 }
 
 .hlavicka {
   display: flex;
   flex-direction: row;
+  margin: 30px auto;
+
+}
+
+.poteseni {
+  display: flex;
+  flex-direction: column;
   background-image: url(images/cupcake.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding:270px 0;
   position: relative;
 }
 
-.poteseni{
-	display: flex;
-	flex-direction: column;
-	position: absolute;
+.uvitani {
+  flex: 0 0 60%;
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+  max-width: 1100px;
+  margin: 30px 0;
 }
 
 h1 {
   font-size: 52px;
-  margin: 0;
+  color: #ffffff;
+  margin: 30px 0;
+  line-height: 1.25;
   padding: 0;
-  position: absolute;
-  
+  flex: 0 0 60%;
+  display: inline-block;
+}
+
+.hlavicka {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu a {
   text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #242424;
+}
+
+.menu a:hover {
+  background-color: #f195b2;
+  color: white;
+}
+
+.menu a:focus,
+.menu a:active {
+  background-color: #d2567d;
+  color: white;
+
 }
 
 .menu {
   list-style: none;
   display: flex;
   flex-direction: row;
+  margin-right: 30px;
+
 }
 
 .logo {
   width: 170px;
+}
+
+.vitejte{
+  display: flex;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #3e606b;
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.nabidka{
+  display: flex;
+  flex-direction: column;
+  background-color:#f0f0f0;
+}
+
+
+.vyrobky {
+  background-color: #f195b2;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: #f195b2;
+  flex-grow: 0;
+
+}
+
+.vyrobky a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.vyrobky:hover,
+.vyrobky a:focus,
+.vyrobky a:active {
+  background-color: #d2567d;
+}
+
+.produkty {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 80px;
+}
+
+
+.produkt,
+.dortpopis
+{
+  flex: 0 0 25%;
+  padding-right:30px;
+}
+
+.dort{
+  border:0;
+  border-radius:  5px 5px 0 0;
+}
+
+.dortpopis{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border:0;
+  border-radius: 0 0 5px 5px;
+  margin:0;
+}
+
+.dortnadpis{
+  text-align: center;
+}
+
+.pristup{
+  display: flex;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+.peceni{ 
+ flex: 0 0 50%;
+ border-radius: 5px;
+ padding-right: 30px;
+ margin: 0 auto;
+}
+
+.pravy{
+  flex: 0 0 50%;
+ 
+}
+
+.paticka{
+  background-color:#303339; 
+  color:white;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0 auto;
+
 }
