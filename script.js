@@ -58,7 +58,7 @@ obrazek.src = 'images/kokos-puding-kolac.jpg';
 
 //Nastavení CSS vlasností prvku
 
-let nadpis2 = document.querySelector('h3');
+let nadpis2 = document.querySelector('h2');
 nadpis.style.color = 'hotpink';
 // místo pomlčky se píše velké písmeno
 
@@ -66,14 +66,30 @@ nadpis.style.color = 'hotpink';
 //nadpis.style.backgroundColor = 'lightpink';
 //všechny hodnoty v uvozovkách jako textový řetězec
 const odstavec = document.querySelector('p');
-odstavec.style.fontSize = '24px';
+odstavec.style.fontSize = '18px';
 
 //className
 const odstavecx = document.querySelector('.seznam');
 console.log(odstavec.className);//vlastnost className
 
-
-
-
 //classList
 //add, remove, toggle
+
+// NASTAVENÍ CSS TŘÍD NA PRVKU
+
+//classname - obsahuje všechny třídy, které jsou na prvku nastavené v atributu class, 
+
+//const odstavec_2 = document.querySelector('.zvyrazneni')
+//odstavec.className += ' zvyrazneni';
+
+//classlist - 
+//add, remove, toggle - metody, které umožňují třídu na prvek přidávat, odebírat nebo přapínat
+const odstavec_2 = document.querySelector('.nadpis-sekce')
+odstavec.classList.add('zvyrazneni');
+
+//odstavec.classList.remove('zvyrazneni')
+odstavec.classList.toggle('zvyrazneni')
+
+
+// FUNKCE JAKO ARGUMENTY JINÝCH FUNKCÍ
+

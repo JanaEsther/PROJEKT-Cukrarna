@@ -236,7 +236,14 @@ h2 {
 	text-align: center;
 }
 
-
+.zvyrazneni{
+	color:#d2567d;
+	background-color: lightpink;
+	padding: 30px;
+	border:none;
+	border-radius: 4px;
+	font-weight: 700;
+}
 
 
   
